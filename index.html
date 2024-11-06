@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perhitungan Umur</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Perhitungan Umur</h1>
+        <form id="umurForm">
+            <label for="nama">Masukkan nama Anda:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="tanggal">Masukkan tanggal lahir (Tanggal-Bulan-Tahun):</label>
+            <input type="text" id="tanggal" name="tanggal" placeholder="dd-mm-yyyy" required>
+
+            <button type="button" onclick="hitungUmur()">Hitung Umur</button>
+            <button type="button" onclick="resetForm()">Input Baru</button>
+        </form>
+
+        <div id="hasil"></div>
+
+        <p class="esc-info">ESC untuk ulang input</p>
+    </div>
+    <script src="script.js"></script>
+    <script src="server.js"></script>
+</body>
+</html>
